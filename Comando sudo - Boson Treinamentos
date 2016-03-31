@@ -1,0 +1,110 @@
+Certificação Linux LPIC-1
+Comando sudo - Executando comandos com privilégios elevados no Linux - 01
+
+Comando sudo     
+
+O comando sudo do sistema operacional Unix permite a usuários comuns obter privilégios de outro usuário, em geral o super usuário, para executar tarefas específicas dentro do sistema de maneira segura e confortável pelo administrador. O nome é uma forma abreviada de se referir a substitute user do (fazer substituindo usuario) ou super user do (fazer como super usuário). 
+
+Um usuario que esteja inscrito no /etc/sudoers pode invocar o comando da seguinte forma: 
+
+sudo [-u usuario] comando
+
+Comando é o comando que deseja executar.
+A opção -u serve para especificar qual usuário deve ser utilizado para executar o comando, se omitida sudo considera o usuário root.
+Antes do comando ser executado, sudo confirma a identidade do usuário pedindo sua própria senha. Se o usuário tem permissão garantida na configuraçao, o comando é executado como super usuario e retorna. A linha de comando continua sendo a do usuario que executou sudo e não a do super usuario. 
+
+Caso sudo seja executado de forma não permitida pela configuração, um registro da ocorrência é feito no arquivo /var/log/auth.log.
+
+Algumas distribuições Linux desabilitam o super usuário e exigem que todas as tarefas administrativas sejam realizadas através do sudo. Ubuntu é um exemplo destas distribuições.
+
+Comando sudo e arquivo de configuração sudoes
+
+Pra que serve o comando sudo -> permite que vc execute um comando com privilégios de outro usuário, como se fosse outro usuario executando aquele comando sem no entanto ter acesso a senha daquele usuario.
+
+Geralmente utilizamos sudo quando desejamos executar comandos com privilégios administrativos, ou seja, permissões com usuario root sem efetuar logon com o usuario root. 
+
+O usuario de instalação ja faz parte do grupo sudo. Os demais usuarios que a gente cria no sistema eles não tem a permissão para usar o sudo e vc tem que configurar o arquivo sudoes.
+
+sudo -> usuario substituto faça -> permite que um usuario rode programas como se fosse um outro usuario rodando, permitindo melhorar o nivel de segurança do sistema. Nao precisa ficar logado como root o tempo todo. 
+
+Exemplo
+
+cat /etc/shadow
+sudo cat/etc/shadow
+
+As principais vantagens do sudo é que o comando pede a senha do usuario logado e nao senha do root. O sudo dificulta a tarefa de usuario malicioso que queira executar uma tarefa no sistema sem permissao. 
+
+O sudo grava em log os comando que ele executa. Posteriormente é possivel fazer uma auditoria no sistema e ver os comando que os usuarios digitaram. 
+
+Algumas distribuições o comando sudo não vem por padrão instalado. Para saber se o comando esta instalado no sistema execute o seguinte comando:
+
+which sudo 
+
+Exibe o local onde ele está instalado. No Ubuntu ele esta instalado em /usr/bin/sudo
+
+O sudo é um utilitario do sistema.
+
+Se o sudo não estiver instalado no sistema por padrão proceder com o seguinte comando:
+
+apt-get install sudo 
+
+É preciso estar logado como root.
+
+Caso esteja usando o Fedora, o CentOS, Red Hat é so utilizar o yum install sudo com usuario root
+
+O sudo tem algumas opções de uso 
+
+A opcao -u permite especificar qual usuario desejo executar um determinado comando 
+
+Exemplo
+
+sudo -u renata ifconfig
+
+A opção -b do sudo faz com que o comando seja listado em background, em segundo plano.
+
+A opção -l permite saber quais os comandos permitidos e proibidos do usuario atual.
+
+A opção -v de validate (validar) serve para atualizar o time stamp do usuario. Time stamp é o tempo que usuario possui para entrar com o usuario sem a necessidade de entrar com a senha novamente. 
+
+A opção -k de kill (matar) invalida o timestamp do usuario ele zera o tempo que sudo tem para usar sem senha.
+
+Arquivo de configuração do sudo
+
+/etc/sudoers
+
+Dentro desse arquivo configuramos os usuarios que podem utilizar o sudo , niveis de permissao para executar programas, quais programas pode executar.
+
+Para trabalhar com esse arquivo não é recomendado editar o arquivo sudoers diretamente. Existe um utilitario chamdo visudo. é um utilitário que trava o arquivo, permite editar o arquivo e ainda permite verificar a gramática caso cometa um erro ao editar o arquivo de configuracao.
+
+Exemplo:
+
+sudo visudo 
+
+Linha de comentários aparecem com o #
+Linha com % se refere a grupo
+
+Comando groups nome_do_usuario permiete verificar quais os usuarios é membro. 
+
+O que é o sudo?
+
+Ele é uma ferramenta que permite um usuário comum executar um comando qualquer como root, sem efetuar login como tal. Ele é derivado do comando su, que é usado para mudar de usuario. Sua sintaxe básica é:
+
+sudo <comando> 
+
+O sudo oferece varios beneficios importantes:
+
+-> Ele registra todos os comandos executados com ele.
+-> Ele registra falhas de autenticação de login.
+-> Com ele, podemos restringir que usuarios o utilizarao e o que farao.
+-> Usando o sudo, nao precisaremos distribuir a senha de root para usuarios.
+
+
+
+
+
+
+
+
+
+
+

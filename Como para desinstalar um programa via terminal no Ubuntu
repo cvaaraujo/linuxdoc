@@ -1,0 +1,3 @@
+Como para desinstalar um programa via terminal no Ubuntu
+
+sudo apt-get remove nome_do_programa

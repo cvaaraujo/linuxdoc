@@ -1,0 +1,3 @@
+Instalar o mcedit editor de texto no Ubuntu
+
+sudo apt-get mc

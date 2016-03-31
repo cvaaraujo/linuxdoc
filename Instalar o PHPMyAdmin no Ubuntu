@@ -1,0 +1,3 @@
+Instalar o PHPMyAdmin no Ubuntu
+
+sudo apt-get install phpmyadmin

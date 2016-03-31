@@ -1,0 +1,43 @@
+Instalar o Apache no Ubuntu
+
+sudo apt-get install apache2
+
+Testar a funcionalidade do Apache
+
+Abrir o browser e digitar 127.0.0.1
+
+Se aparecer a mensagem It works
+
+O apache esta funcionando.
+
+A pasta onde fica armazenado os sites fica em 
+
+cd /var/www
+/var/www$ ls
+html
+cd .. (retornar um nível anterior)
+/var$ ls
+
+Permissão para ambiente de desenvolvimento
+
+retorna na pasta home
+cd $HOME
+
+cd /var/
+ls
+
+Mudar as permissões para escrita e leitura da pasta www
+
+sudo chmod -R 777 www/
+ls
+A pasta www muda de cor
+
+Criar um link da pasta para a area de trabalho
+
+ln -s /var/www/ /home/vinicius/Area\ de\ Trabalho/
+
+
+
+
+
+

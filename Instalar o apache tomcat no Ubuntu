@@ -1,0 +1,33 @@
+Instalar o apache tomcat no Ubuntu
+
+Execute o seguinte comando:
+sudo apt-get install default-jdk
+
+Instalando o Tomcat
+Você pode instalar o Tomcat versões 6 ou 7 através do apt-get ou a partir do site do Apache Tomcat.
+
+Para baixá-lo através do apt-get, digite:
+sudo apt-get install tomcat7
+
+Finalizando a instalação
+Tomcat agora instalado e configurado. No entanto, ele ainda não está totalmente operacional.
+
+O passo final é inicializar o Tomcat:
+
+sudo service tomcat7 start
+
+Por fim, faça um teste executando:
+echo $CATALINA_HOME
+
+echo $JAVA_HOME
+
+E verifique se a resposta é o caminho da variável de ambiente configurado anteriormente.
+
+Uma vez executado, o Tomcat estará instalado, pronto e respondendo na porta 8080.
+
+Testando via interface Web
+Você pode verificar se o Tomcat está em execução acessando sua página pelo servidor digitando o endereço IP do seu Cloud seguido da porta :8080.
+
+Exemplo: http://meudominio:8080
+
+Se retornar uma página com os dizeres “It Works!”, você instalou e configurou o ambiente com sucesso. Se não retornar, certifique-se de ter seguido todos os passos corretamente.

@@ -1,0 +1,9 @@
+Como instalar o git no Ubuntu
+
+http://git-scm.com
+
+sudo apt-get install git
+
+
+sudo apt-get install git-cola
+

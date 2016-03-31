@@ -1,0 +1,71 @@
+Shell do Linux - Comando ls cd pwd
+
+Prompt de comando
+
+root@pegasus
+
+Informa o login usuario root no nome de computador pegasus 
+~ significa diretorio padrao do usuario. 
+# significa o usuario administrador do sistema.
+
+O shell fornece uma camada entre o kernel do linux e o usuario final. 
+
+Os comando geralmente tem quatro partes 
+
+1) O comando em si. Exemplo: ls
+2) Opções do comando que são precedidos pelo hífen. Exemplo: ls -l 
+3) Argumentos. Exemplo: ls -l /home
+4) ENTER
+
+Comando ls -> listar o conteúdo do diretório atual.
+
+Comando ls com a opção -l 
+Lista os arquivos com formato longo e detalhado. Exemplo: informações sobre permissão do arquivo, número de links, usuario proprietario do arquivo. grupo de arquivo, data e hora, tamanho do arquivo, e na ultima coluna do lado direito o nome do arquivo ou diretório.
+
+Comando ls-a 
+Permite listar arquivos ocultos também 
+
+Combinando opções
+ls -la
+Combina arquivos ocultos com listagem longa.
+
+Comando ls -i
+Lista o inodes do arquivo. O inode é um número que identifica cada arquivo do sistema de arquivos.
+
+Comando ls -o
+Exibe uma lista longa exceto a coluna de grupo do arquivo.
+
+Comando ls -r
+Permite listar o conteúdo de forma reversa, da última letra para a primeira letra do alfabeto.
+
+Comando clear 
+Limpa a tela
+
+Comando pwd
+Diretorio de trabalho atual.
+
+Comando ls -l /home/Vinicius
+
+cd -> change directory, mudar de diretório
+
+cd /home
+cd / 
+Direto para o comando raiz.
+cd ~
+Diretório padrão do usuario.
+cd -
+Retorna ao diretório anterior.
+cd ..
+Diretorio anterior
+cd /home; ls -l
+Primeiro muda para o diretorio /home e depois faz a listagem longa do conteudo desse diretorio.
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+Alterar a senha do root no Ubuntu
+
+sudo passwd
+
+Digite a senha do usuario logado
+
+Digite a nova senha para o usuário root
+
+Digite novamente a senha para o usuário root
+
+

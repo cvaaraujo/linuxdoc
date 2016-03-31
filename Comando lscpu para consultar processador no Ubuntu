@@ -1,0 +1,19 @@
+Comando lscpu para consultar processador no Ubuntu
+
+O comando lscpu permite descubra informações sobre o processador ou processadores que estão instalados em um computador. É possível visualizar dados sobre a CPU como um todo ou um núcleo particular ou sobre todos os processadores e nucleo de processamento de uma vez. O comando é um utilitário e obtem as informações que vai exibir na tela /proc/cpuinfo.
+
+Paginas de manual do lscpu
+
+man lscpu
+
+lscpu
+Traz um conjunto de informações sobre a CPU do computador.
+
+-> Arquitetura (x86_64).
+-> CPU op modes
+-> Fabricantes
+-> Core do processador
+-> E outras informações
+
+less /proc/cpuinfo
+

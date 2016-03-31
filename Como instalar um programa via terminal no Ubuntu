@@ -1,0 +1,9 @@
+Como instalar um programa via terminal no Ubuntu
+
+sudo apt-get install nome_do_programa
+sudo indica a execução de um comando como superusuario (root)
+apt-get é um gerenciador de pacotes, faz a conexão entre o computador local e os servidores para baixar os programas.
+install refere-se a instalar um pacote determinado.
+nome_do_programa é o nome do programa que deseja baixar.
+
+

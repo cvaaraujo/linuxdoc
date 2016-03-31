@@ -1,0 +1,16 @@
+Procedimentos
+Vá até o terminal e digite os seguintes comandos:
+
+1° comando:
+
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+
+2° comando (copie e cole de uma só vez todo este comando na linha no terminal):
+
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+
+3° comando (copie e cole toda esta linha no terminal):
+
+sudo apt-get update ; sudo apt-get install google-chrome-stable -y
+
+Pronto. O Chrome já está instalado no sistema. 

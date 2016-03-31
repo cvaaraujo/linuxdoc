@@ -1,0 +1,9 @@
+Três comandos para fazer manutenção no sistema Ubuntu via terminal
+
+sudo apt-get autoremove 
+Remove programas que estão obsoletos 
+
+sudo apt-get autoclean
+Limpar o cache do apt.
+
+sudo apt-get install -f

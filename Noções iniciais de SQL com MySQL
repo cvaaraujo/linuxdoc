@@ -1,0 +1,32 @@
+Noções iniciais de SQL com MySQL
+
+O objetivo é estudar a linguagem SQL utilizando o Sistema Gerenciador de Banco de Dados Relacional MySQL. 
+
+Conceitos de SGBDR
+
+Sistema Gerenciador de Banco de Dados Relacional, baseado no modelo relacional E. F. Code na década 70. 
+
+Composição de uma banco de dados relacional
+
+-> Tabelas
+-> Campos (Colunas da tabela, atributos)
+-> Registros (Linhas da tabela, tuplas)
+
+Tabela é um objeto onde os dados são armazenados dentro de um banco de dados relacional. Coleção de dados relacionados e que consiste em linhas e colunas. 
+
+Sistema de banco de dados relacional, as tabelas se relacionam entre si. As tabelas mantem uma relação entre as tabelas utilizando uma determinada linha específica .
+
+Uma tabela tem portanto os campos. O campo é uma entidade que representa os atributos dos dados, qualidades dos dados. exemplo: nome, data de nascimento, o salário, o preço, o sobrenome, código de um produto, o número de um documento de um usuario. Essas informações ficam armazenadas em campos e campos são as colunas de uma tabela. Esses campos mantém informações específicas para cada um dos registros. 
+
+Registro são as linhas da tabela, também chamadas de tuplas. Registro é uma entrada individual em uma tabela. é um conjunto de campos relacionados que diz respeito ao mesmo grupo de informações que caracterizam os dados de uma entidade única. 
+
+Linguagem de consulta estruturada 
+
+Linguagem padrão para acesso a banco de dados relacional.
+
+É usado em varios sistemas como por exemplo MySQL, SQL Server, Oracle, Sybase, Access, DB2 da IBM, PostgreSQL.
+
+MÚSICA Clássica. Burrows, John; Wiffen, Charles (Eds.), com a colaboração de Robert Ainsley ... [et al.]. Tradução: André Telles. Rio de Janeiro: Jorge Zahar, 2006. ISBN 85-7110-911-7.
+
+
+

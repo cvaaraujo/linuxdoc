@@ -1,0 +1,5 @@
+Instalar o kate editor de texto no Ubuntu
+
+sudo apt-get install kate
+
+Ideal para editar arquivos php e html.
